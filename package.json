@@ -12,6 +12,7 @@
     "@angular/platform-browser": "~13.1.1",
     "@angular/platform-browser-dynamic": "~13.1.1",
     "@angular/router": "~13.1.1",
+    "@nativescript-community/ui-material-bottom-navigation": "^6.2.14",
     "@nativescript/angular": "^13.0.0",
     "@nativescript/core": "~8.1.1",
     "@nativescript/theme": "~3.0.1",
@@ -21,6 +22,7 @@
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.1.1",
     "@angular/compiler-cli": "~13.1.1",
+    "@nativescript/ios": "8.1.0",
     "@nativescript/types": "~8.1.1",
     "@nativescript/webpack": "~5.0.0",
     "@ngtools/webpack": "~13.1.1",

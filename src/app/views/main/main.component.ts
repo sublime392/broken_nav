@@ -1,4 +1,4 @@
-import { Component, Injector } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'main',
@@ -23,7 +23,7 @@ export class MainComponent {
     }
   ];
 
-  constructor(injector: Injector) {
+  constructor() {
     this.tabs = this.tabs.filter((t) => t.enabled);
   }
 }

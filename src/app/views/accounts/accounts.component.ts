@@ -1,4 +1,4 @@
-import { Component, Injector } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { RouterExtensions } from '@nativescript/angular';
 
@@ -8,7 +8,7 @@ import { RouterExtensions } from '@nativescript/angular';
   styleUrls: ['./accounts.component.scss']
 })
 export class AccountsComponent {
-  constructor(injector: Injector, private router: RouterExtensions) {}
+  constructor(private router: RouterExtensions) {}
 
   navigateToDetails(): void {
     this.router.navigate(['../', 'account']);

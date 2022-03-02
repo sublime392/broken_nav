@@ -7,7 +7,7 @@ import { RouterExtensions } from '@nativescript/angular';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  constructor(private router: RouterExtensions) {
+  constructor(router: RouterExtensions) {
     router.navigate(['/', 'main', 'default']);
   }
 }

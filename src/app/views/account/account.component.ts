@@ -1,4 +1,4 @@
-import { Component, Injector } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { RouterExtensions } from '@nativescript/angular';
 
@@ -8,7 +8,7 @@ import { RouterExtensions } from '@nativescript/angular';
   styleUrls: ['./account.component.scss']
 })
 export class AccountComponent {
-  constructor(injector: Injector, private router: RouterExtensions) {
+  constructor(private router: RouterExtensions) {
   }
 
   goBack(): void {

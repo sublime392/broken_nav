@@ -21,7 +21,11 @@ export class Browse3Component implements OnInit {
     sideDrawer.showDrawer();
   }
 
-  goBack(): void {
+  goHome(): void {
     this.router.navigate(['/'], { clearHistory: true });
+  }
+
+  goBack(): void {
+    this.router.back();
   }
 }

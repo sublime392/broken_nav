@@ -8,7 +8,7 @@ import { Browse3Component } from './browse3.component';
 
 const routes: Routes = [
   {
-    path: 'browse',
+    path: '',
     component: BrowseComponent,
     children: [
       {

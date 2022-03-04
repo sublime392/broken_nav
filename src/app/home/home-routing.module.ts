@@ -9,7 +9,7 @@ import { AllGuard } from '../all.guard';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     component: HomeComponent,
     canActivateChild: [AllGuard],
     children: [

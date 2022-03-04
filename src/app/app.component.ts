@@ -54,7 +54,7 @@ export class AppComponent implements OnInit {
       transition: {
         name: 'fade',
       },
-      clearHistory: true
+      clearHistory: false
     });
 
     const sideDrawer = <RadSideDrawer>Application.getRootView();

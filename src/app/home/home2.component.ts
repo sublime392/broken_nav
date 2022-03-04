@@ -23,5 +23,6 @@ export class Home2Component implements OnInit {
 
   goBack(): void {
     this.router.back();
+    // this.router.navigate(['/home'], { clearHistory: true });
   }
 }

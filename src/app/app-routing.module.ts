@@ -1,20 +1,21 @@
-import { NgModule } from '@angular/core'
-import { Routes } from '@angular/router'
-import { NativeScriptRouterModule } from '@nativescript/angular'
+import { MagazineComponent } from './views/magazine/magazine.component';
+import { NgModule } from '@angular/core';
+import { Routes } from '@angular/router';
+import { NativeScriptRouterModule } from '@nativescript/angular';
 
 const routes: Routes = [
   {
-    path: 'main',
-    loadChildren: () => import('./views/main/main.module').then((m) => m.MainModule),
+    path: 'magazine',
+    loadChildren: () => import('./views/magazine/magazine.module').then((m) => m.MagazineModule),
   },
   {
-    path: 'account',
-    loadChildren: () => import('./views/account/account.module').then((m) => m.AccountModule),
-  },
-]
+    path: 'accounts',
+    loadChildren: () => import('./views/accounts/accounts.module').then((m) => m.AccountsModule),
+  }
+];
 
 @NgModule({
   imports: [NativeScriptRouterModule.forRoot(routes)],
   exports: [NativeScriptRouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

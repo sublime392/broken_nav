@@ -1,0 +1,10 @@
+
+@media (max-width: 600px) {
+  // Making the modal fullscreen in mobiles
+  .cdk-overlay-pane {
+    width: 90vw !important;
+    height: 100vh !important;
+    // margin-top: 15vh !important;
+    padding-top: 15vh !important;
+  }
+}

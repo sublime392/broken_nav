@@ -1,0 +1,9 @@
+<ActionBar class="action-bar">
+  <ActionItem class="fas android" (tap)="onCancel()" ios.position="right" text="&#xf0c9;" android.position="actionBar">
+  </ActionItem>
+</ActionBar>
+
+<GridLayout class="page__content">
+  <Label class="page__content-icon fas" text="&#xf015;"></Label>
+  <Label [nsRouterLink]="['/home/home2']" class="page__content-placeholder" text="go to home2"></Label>
+</GridLayout>

@@ -1,0 +1,16 @@
+<ActionBar class="action-bar">
+  <NavigationButton visibility="hidden"></NavigationButton>
+  <GridLayout columns="50, *">
+    <Label class="action-bar-title" text="Home" colSpan="2"></Label>
+
+    <Label class="fas" text="&#xf0c9;" (tap)="onDrawerButtonTap()"></Label>
+  </GridLayout>
+</ActionBar>
+
+<StackLayout class="page__content">
+  <HtmlView #messageView, html=""></HtmlView>
+  <Label class="page__content-icon fas" text="&#xf015;"></Label>
+  <Label (tap)="home2()" class="page__content-placeholder" text="go to home2"></Label>
+  <Label (tap)="browse()" class="page__content-placeholder" text="go to browse"></Label>
+  <Label class="page__content-placeholder" text="open settings" (tap)="openSettings()"></Label>
+</StackLayout>
